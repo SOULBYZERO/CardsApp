@@ -55,8 +55,8 @@ const HomePage = () => {
   return (
     <>
       <PageHeader
-        title="Welcome to Business Cards Library"
-        subtitle="Free and fun website for businesses advertising"
+        title="Welcome to  our Business Cards Library"
+        subtitle="a free website for Business Card Adverts"
       />
       <Paper
         elevation={3}
@@ -64,7 +64,7 @@ const HomePage = () => {
         <Container sx={{ textAlign: "center", mt: 4 }}>
           <Box sx={{ my: 4 }}>
             <Typography variant="h5" gutterBottom>
-              <strong>Explore our users designs</strong>
+              <strong>Explore Our Business Cards</strong>
             </Typography>
             <Box justifyContent="center" display="flex">
               <Box width="100%">
@@ -108,7 +108,7 @@ const HomePage = () => {
               onClick={() => {
                 navigate(ROUTES.CARDS);
               }}>
-              Explore more Designs
+              Explore more Cards
             </Button>
           </Box>
           <Box sx={{ my: 4, py: 4, backgroundColor: "transparent" }}>

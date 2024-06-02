@@ -8,14 +8,19 @@ export default function Main({ children }) {
   return (
     <Box
       sx={{
-        minHeight: "85vh",
-        padding: "5px",
         backgroundColor: isDark ? "#333333" : "#e3f2fd",
-        color: isDark ? "white" : "black",
-        textAlign: "center",
-      }}
-    >
-      {children}
+        padding: "10px", // Add padding for spacing
+      }}>
+      <Box
+        sx={{
+          minHeight: "85vh",
+          padding: "5px",
+          backgroundColor: isDark ? "#333333" : "#e3f2fd",
+          color: isDark ? "white" : "black",
+          textAlign: "center",
+        }}>
+        {children}
+      </Box>
     </Box>
   );
 }
