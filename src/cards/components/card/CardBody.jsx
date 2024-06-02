@@ -6,7 +6,7 @@ import {
   Divider,
   Typography,
 } from "@mui/material";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import { Recommend } from "@mui/icons-material";
 
 export default function CardBody({
   title,
@@ -17,11 +17,11 @@ export default function CardBody({
   cardLikes,
 }) {
   return (
-    <Box sx={{ height: 250 }}>
+    <Box sx={{ height: 220, display: "flex", flexDirection: "column" }}>
       <CardHeader title={title} subheader={subtitle} />
       <Divider variant="middle" textAlign="right">
         <strong>
-          <ThumbUpIcon fontSize="small" />
+          <Recommend fontSize="medium" />
           {cardLikes}
         </strong>
       </Divider>

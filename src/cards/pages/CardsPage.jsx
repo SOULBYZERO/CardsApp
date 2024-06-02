@@ -8,7 +8,7 @@ import { Paper } from "@mui/material";
 
 export default function CardPage() {
   const { value, handleCardDelete, handleCardLike, getAllCards } = useCards();
-  const { isLoading, error, filteredCards, filterCount } = value;
+  const { isLoading, error, filteredCards } = value;
 
   useEffect(() => {
     getAllCards();
@@ -20,7 +20,7 @@ export default function CardPage() {
     <div>
       <PageHeader
         title="Cards"
-        subtitle="On this page you can find all bussines cards from all categories"
+        subtitle="On this page you can find all user created Cards"
       />
       <Paper
         elevation={3}
@@ -37,7 +37,6 @@ export default function CardPage() {
           handleCardLike={handleCardLike}
           isLoading={isLoading}
           error={error}
-          count={filterCount}
         />
         {user && (user.isAdmin === true || user.isBusiness === true) ? (
           <AddNewCardButton />

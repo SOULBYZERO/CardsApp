@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   Container,
+  Paper,
   Table,
   TableBody,
   TableCell,
@@ -49,34 +50,38 @@ export default function UsersTable() {
       <Container maxWidth="xl">
         <PageHeader
           title="Users Table"
-          subtitle="Here you can view users details and update Business state"
+          subtitle="Details of all registered users:"
         />
-        <TableContainer>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>Avatar</TableCell>
-                <TableCell>Full Name</TableCell>
-                <TableCell>Email</TableCell>
-                <TableCell>Phone</TableCell>
-                <TableCell>Address</TableCell>
-                <TableCell>Is Business</TableCell>
-                <TableCell>Is Admin</TableCell>
-                <TableCell>Delete</TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {usersData.map((user) => (
-                <UsersTableContent
-                  key={user._id}
-                  user={user}
-                  handleChangeCheckBox={handleChangeCheckBox}
-                  handleDeleteUser={handleDeleteUser}
-                />
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
+        <Paper
+          elevation={3}
+          sx={{ padding: 4, mt: 4, mb: 4, maxWidth: "1100px", mx: "auto" }}>
+          <TableContainer>
+            <Table>
+              <TableHead>
+                <TableRow>
+                  <TableCell>Avatar</TableCell>
+                  <TableCell>Full Name</TableCell>
+                  <TableCell>Email</TableCell>
+                  <TableCell>Phone</TableCell>
+                  <TableCell>Address</TableCell>
+                  <TableCell>Is Business</TableCell>
+                  <TableCell>Is Admin</TableCell>
+                  <TableCell>Delete</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {usersData.map((user) => (
+                  <UsersTableContent
+                    key={user._id}
+                    user={user}
+                    handleChangeCheckBox={handleChangeCheckBox}
+                    handleDeleteUser={handleDeleteUser}
+                  />
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Paper>
       </Container>
     );
   }

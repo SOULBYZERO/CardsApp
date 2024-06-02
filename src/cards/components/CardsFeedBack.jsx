@@ -34,7 +34,6 @@ export default function CardsFeedBack({
   if (cardsList) {
     return (
       <>
-        <Typography>Total cards displayed in this page: {count}</Typography>
         <Cards
           cardsList={cardsList}
           handleCardDelete={handleCardDelete}
