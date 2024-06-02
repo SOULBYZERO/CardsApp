@@ -74,13 +74,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Make sure you have all the required Packages installed
 
 npm install @emotion/react@^11.11.4 @emotion/styled@^11.11.0
+
 npm install @mui/icons-material@^5.15.13 @mui/material@^5.15.13
+
 npm install @react-google-maps/api@^2.19.3
+
 npm install @testing-library/jest-dom@^5.17.0 @testing-library/react@^13.4.0 @testing-library/user-event@^13.5.0
+
 npm install axios@^1.6.8
+
 npm install joi@^17.12.2
+
 npm install jwt-decode@^4.0.0
+
 npm install react@^18.2.0 react-dom@^18.2.0
+
 npm install react-copy-to-clipboard@^5.1.0 react-responsive-carousel@^3.2.23 react-router-dom@^6.22.3
+
 npm install react-scripts@5.0.1
+
 npm install web-vitals@^2.1.4
